@@ -10,8 +10,8 @@ export function updateInGameTime(inGameTimeDecimal) {
     const minuteElement = document.getElementById('minute');
 
     const now = new Date();
-    const hours = `${ingameHour} % 12`;
-    const minutes = `${ingameMinute.toString().padStart(2, '0')}`;
+    const hours = ingameHour % 12;
+    const minutes = ingameMinute.toString().padStart(2, '0');
 
     const hourDegrees = (360 / 12) * hours + (360 / 12) * (minutes / 60);
     const minuteDegrees = (360 / 60) * minutes + (360 / 60) * (seconds / 60);
