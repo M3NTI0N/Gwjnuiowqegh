@@ -1,0 +1,25 @@
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hour, .minute, .second {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #333;
+    top: 50%;
+    transform-origin: 100%;
+    transform: translateY(-50%);
+}
+
+.hour {
+    transform: rotate(90deg);
+}
+
+.minute {
+    transform: rotate(180deg);
+}
