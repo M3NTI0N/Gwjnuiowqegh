@@ -40,11 +40,11 @@ export function updateInGameTime(inGameTimeDecimal) {
     ].join(';');
     
     // Change Background at times.
-    if (floorHour > 5 && floorHour < 12) {
+    if (floorHour > 5 && floorHour < 6) {
         document.getElementById('ingame-time-label').innerText = 'Morning';
         document.body.style.backgroundImage = prefixedmorningGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
-    } else if (floorHour > 12 && floorHour < 18) {
+    } else if (floorHour > 6 && floorHour < 18) {
         document.getElementById('ingame-time-label').innerText = 'Afternoon';
         document.body.style.backgroundImage = prefixedafternoonGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
