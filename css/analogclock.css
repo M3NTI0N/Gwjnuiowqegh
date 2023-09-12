@@ -1,5 +1,6 @@
         /* Style for the clock container */
         .clock-container {
+            background-image: './img/clockwork.png';
             width: 100px;
             height: 100px;
             border: 2px solid #333;
