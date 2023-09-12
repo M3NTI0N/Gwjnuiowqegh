@@ -12,17 +12,12 @@
         /* Style for the clock hands */
         .clock-hand {
             position: absolute;
-            height: 50%;
-            width: 2px;
-            background: #333;
-            left: 50%;
-            transform-origin: 50% 100%;
-            transform: translateX(-50%);
+            width: 50%;
+            top: 50%;
+            transform-origin: 100%;
+            transform: translateY(-50%) rotate(90deg);
         }
-
-        /* Style for the hour hand */
         .hour-hand {
-            background: #333;
-            transform: translateX(-50%) rotate(0deg);
-            z-index: 3;
+            width: 100%; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
         }
