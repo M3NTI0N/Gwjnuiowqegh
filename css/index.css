@@ -20,9 +20,11 @@ body {
 }
 
 .header {
-	display: grid;
+	display: flex;
 	grid-template-columns: 1fr 1fr;
 	gap: 0.5em;
+	align-items: center;
+	justify-content: center;
 }
 
 .header-status {
