@@ -57,7 +57,6 @@ export function updateInGameTime(inGameTimeDecimal) {
         document.body.style.backgroundImage = prefixednightGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
     }
-    document.body.style.backgroundColor = '#6E40C9';
     
     window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
     hourElement.style.transform = `rotate(${hourDegrees}deg)`;
