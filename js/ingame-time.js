@@ -10,27 +10,10 @@ export function updateInGameTime(inGameTimeDecimal) {
     const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
     // Gradients
-    const prefixedmorningGradient = [
-        'linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)',
-        '-webkit-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)',
-        '-moz-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)',
-        '-o-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)'
-    ].join(',');
-
-    const prefixedafternoonGradient = 'linear-gradient(to bottom, #40405c 0%, #6f71aa 80%, #8a76ab 100%)';
-
-    const prefixedeveningGradient = [
-        'linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
-        '-webkit-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
-        '-moz-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
-        '-o-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)'
-    ].join(',');
-    const prefixednightGradient = [
-        'linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)',
-        '-webkit-linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)',
-        '-moz-linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)',
-        '-o-linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)'
-    ].join(',');
+    const prefixedmorningGradient = 'linear-gradient(to bottom, #fddb92, #d1fdff)';
+    const prefixedafternoonGradient = 'linear-gradient(to bottom, #44bfc3, #9eb8f0)';
+    const prefixedeveningGradient = 'linear-gradient(to bottom, #dbd4b4, #ab9d8f, #887f79, #3c3744)';
+    const prefixednightGradient = 'linear-gradient(to bottom, #191e3a, #2a3f5d, #0f2f61)';
     
     // Change Background at times.
     if (floorHour >= 5 && floorHour < 12) {
