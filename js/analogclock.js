@@ -1,12 +1,8 @@
-import * as Util from './util.js';
-import * as TabManager from './tab-manager.js';
-
-export function updateInGameTime(inGameTimeDecimal) {
-    const floorHour = Math.floor(inGameTimeDecimal);
-	const ingameHour = Util.getTwelveHour(floorHour);
-	const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
-
-	window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
-	document.getElementById('ingame-time').innerText = ingameTimeDisplay;
-	TabManager.updateTitle();
+function toggleFoldable() {
+	var content = document.getElementById('foldable-content');
+	if (content.style.display === 'none' || content.style.display === '') {
+		content.style.display = 'block';
+	} else {
+		content.style.display = 'none';
+	}
 }
