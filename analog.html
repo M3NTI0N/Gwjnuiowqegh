@@ -15,7 +15,7 @@
 
 <body>
 	<div class="main">
-		<button onclick="toggleHeaderStatus()">Toggle Header</button>
+		<label><input type="checkbox" onchange="toggleHeaderStatus()" checked/>&nbsp;Show Clocl</label>
 		<div class="header">
 			<div class="header-status">
 				<div class="clock-container" id="clock-container">
@@ -46,7 +46,7 @@
 	<script src="./js/script.js?v=6903" type="module"></script>
 	<script>
         function toggleHeaderStatus() {
-            var headerStatus = document.querySelector('.header-status');
+            var headerStatus = document.querySelector('.clock-container');
             headerStatus.classList.toggle('hidden');
         }
     </script>
