@@ -12,7 +12,7 @@ export function updateInGameTime(inGameTimeDecimal) {
     // Gradients
     const prefixedmorningGradient = 'linear-gradient(to bottom, #fddb92, #d1fdff)';
     const prefixedafternoonGradient = 'linear-gradient(to bottom, #44bfc3, #9eb8f0)';
-    const prefixedeveningGradient = 'linear-gradient(to bottom, #dbd4b4, #ab9d8f, #887f79, #3c3744)';
+    const prefixedeveningGradient = 'linear-gradient(to bottom, #1e2022 0%, #414a4c 40%, #797f83 100%)';
     const prefixednightGradient = 'linear-gradient(to bottom, #191e3a, #2a3f5d, #0f2f61)';
     
     // Change Background at times.
