@@ -5,6 +5,7 @@
     border-radius: 50%;
     position: relative;
     background-size: cover; /* Adjust the background size as needed */
+    margin: 0 auto;
 }
 
 .clock {
