@@ -2,7 +2,7 @@ import * as Util from './util.js';
 import * as TabManager from './tab-manager.js';
 
 export function updateInGameTime(inGameTimeDecimal) {
-	const floorHour = Math.floor(inGameTimeDecimal);
+	const floorHour = 0;// Math.floor(inGameTimeDecimal);
 	const ingameHour = Util.getTwelveHour(floorHour);
     const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
     const hours = floorHour % 24;
