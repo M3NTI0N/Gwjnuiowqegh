@@ -47,7 +47,7 @@ export function updateInGameTime(inGameTimeDecimal) {
             document.body.style.backgroundImage = prefixedmorningGradient;
         } else if (floorHour > 10 && floorHour < 15) {
             document.body.style.backgroundImage = prefixedafternoonGradient;
-        } else if (floorHour > 15 && floorHour < 19) {
+        } else if (floorHour > 15 && floorHour < 20) {
             document.body.style.backgroundImage = prefixedeveningGradient;
         } else {
             document.body.style.backgroundImage = prefixednightGradient;
