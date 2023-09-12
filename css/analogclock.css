@@ -15,7 +15,7 @@
             width: 50%;
             top: 50%;
             transform-origin: 100%;
-            transform: translateY(0) rotate(90deg);
+            transform: translateY(-50%) rotate(90deg);
         }
         .hour-hand {
             width: 100%; /* Set the width of the image */
