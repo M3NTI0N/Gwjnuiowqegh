@@ -50,5 +50,5 @@
 
 /* Style for the folded content (hidden by default) */
 .foldable-content {
-    display: none;
+    display:inline;
 }
