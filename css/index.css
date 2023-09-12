@@ -39,8 +39,8 @@ body {
 	margin-top: 412px;
 	background-color: aliceblue;
 	box-sizing: inherit;
-	width: 550px;
-	height: 45px;
+	padding: .5rem 2.5rem;
+	border-radius: 5vh;
 }
 
 #palia-times-container {
