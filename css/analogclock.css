@@ -25,11 +25,11 @@
 }
 
 .hour {
-    position: relative;
+    position: absolute;
     width: 100%; /* Set the width of the square image */
     height: 100%; /* Set the height of the square image */
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     transform: translate(-50%, -50%);
 }
 
