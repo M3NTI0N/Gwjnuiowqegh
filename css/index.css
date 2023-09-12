@@ -82,8 +82,4 @@ input[type="text"][id^="text"] {
 	#ingame-time {
 		margin-right: 0;
 	}
-
-	.ingame-time-label {
-		display: none;
-	}
 }
