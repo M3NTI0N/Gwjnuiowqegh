@@ -4,7 +4,7 @@ import * as TabManager from './tab-manager.js';
 export function updateInGameTime(inGameTimeDecimal) {
 	const floorHour = Math.floor(inGameTimeDecimal);
 	const ingameHour = Util.getTwelveHour(floorHour);
-    if (Util.getMeridiemText(floorHour) == 'PM'){
+    if (Util.getMeridiemText(floorHour) === 'PM'){
         const hourDeg = (360 / 24) * (ingameHour + 12 + ingameMinute / 60);    
     } else {
         const hourDeg = (360 / 24) * (ingameHour + ingameMinute / 60);
