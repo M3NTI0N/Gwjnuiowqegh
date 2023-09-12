@@ -26,24 +26,27 @@ export function doSpeak(theText) {
 
 const _getVoice = (voices) => {
 	let foundVoice = voices.find(function (voice) {
-    return voice.name === "Google UK English Female";
-	});
+		return voice.name === "Google UK English Female";
+	  });
 	
-	if (foundVoice) {
-		return { voice: foundVoice, isDefault: false };
-	}
-
-	foundVoice = voices.find(function (voice) {
-		// return voice.name === "Microsoft Linda - English (Canada)";
+	  if (foundVoice) {
+		return { voice: foundVoice };
+	  }
+	
+	  foundVoice = voices.find(function (voice) {
+		return voice.name === "Microsoft Linda - English (Canada)";
+	  });
+	
+	  if (foundVoice) {
+		return { voice: foundVoice };
+	  }
+	
+	  // If no specific female voice is found, fallback to the first available female voice
+	  foundVoice = voices.find(function (voice) {
 		return voice.gender === "female";
-	});
+	  });
 	
-	if (foundVoice) {
-		return { voice: foundVoice, isDefault: false };
-	}
-
-	return {
-		voice: voices[1],
-		isDefault: true
-	};
+	  return {
+		voice: foundVoice || voices[0], // Fallback to the first available voice if no female voice is found
+	  };
 }
