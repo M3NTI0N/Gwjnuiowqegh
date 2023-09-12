@@ -42,7 +42,7 @@ const _getVoice = (voices) => {
 	}
 
 	return {
-		voice: voices[0],
+		voice: voices[1],
 		isDefault: true
 	};
 }
