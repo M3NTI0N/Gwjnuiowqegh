@@ -21,7 +21,7 @@
     background: #333;
     top: 50%;
     transform-origin: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
 }
 
 .hour {
