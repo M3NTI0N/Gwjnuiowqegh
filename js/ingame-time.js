@@ -2,14 +2,15 @@ import * as Util from './util.js';
 import * as TabManager from './tab-manager.js';
 
 export function updateInGameTime(inGameTimeDecimal) {
+    // other 
+    const floorHour = Math.floor(inGameTimeDecimal);
+    const ingameHour = Util.getTwelveHour(floorHour);
+    const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
+    const hours = floorHour % 24;
+    const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
+    const hourElement = document.getElementById('hour');
     document.addEventListener('DOMContentLoaded', function() {
-        // other 
-        const floorHour = Math.floor(inGameTimeDecimal);
-	    const ingameHour = Util.getTwelveHour(floorHour);
-        const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
-        const hours = floorHour % 24;
-        const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
-        const hourElement = document.getElementById('hour');
+
 
         // Gradients
         const morninggradient = 'linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)';
