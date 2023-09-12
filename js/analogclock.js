@@ -9,7 +9,7 @@ export function updateClockHands(inGameTimeDecimal) {
     // Calculate rotation angles for the clock hands
     const hourDeg = (360 / 12) * (hours + minutes / 60);
     const minuteDeg = (360 / 60) * minutes;
-    const secondDeg = (360 / 60) * seconds;
+
     document.getElementById('hour-hand').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
     document.getElementById('minute-hand').style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
 
