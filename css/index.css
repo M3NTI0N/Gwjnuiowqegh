@@ -38,6 +38,7 @@ body {
 	margin-right: 10px;
 	margin-top: 412px;
 	background-color: aliceblue;
+	box-sizing: inherit;
 }
 
 #palia-times-container {
