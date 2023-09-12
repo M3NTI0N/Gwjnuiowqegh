@@ -3,9 +3,9 @@
 }
 
 body {
-	background-image:
+	/* background-image:
 		linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.73)),
-		url(https://images.ctfassets.net/qyr5bjm559gz/4HhELAdd1DF1UfbJZrSzmJ/7294aeb34dfed54749849025bd4b76ef/Palia_Key_Art_Wallpaper_4K.png?);
+		url(https://images.ctfassets.net/qyr5bjm559gz/4HhELAdd1DF1UfbJZrSzmJ/7294aeb34dfed54749849025bd4b76ef/Palia_Key_Art_Wallpaper_4K.png?); */
 	position: absolute;
 	height: 100%;
 	background-repeat: no-repeat;
