@@ -38,7 +38,6 @@ body {
 	margin-right: 10px;
 	margin-top: 412px;
 	background: var(--pill-background);
-	display: inline-block;
 	transform: translate(-50%);
 	font-size: 2.5rem;
 	font-family: sans-serif;
