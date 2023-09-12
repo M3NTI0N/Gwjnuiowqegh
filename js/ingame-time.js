@@ -9,9 +9,9 @@ export function updateInGameTime(inGameTimeDecimal) {
     const hourDegrees = (360 / 12) * hours + (360 / 12) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
 	if (floorHour > 11) {
-		document.getElementsByClassName('clock-container').style.backgroundImage = "url('/img/innersun.png')";
+		document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
 	} else {
-		document.getElementsByClassName('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
+		document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
 	}
     
 
