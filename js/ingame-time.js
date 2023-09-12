@@ -3,8 +3,8 @@ import * as TabManager from './tab-manager.js';
 
 export function updateInGameTime(inGameTimeDecimal) {
 	const floorHour = Math.floor(inGameTimeDecimal);
-	const ingameHour = 0;//Util.getTwelveHour(floorHour);
-    const ingameMinute = 0;//Math.floor((inGameTimeDecimal % 1) * 60);
+	const ingameHour = Util.getTwelveHour(0);//Util.getTwelveHour(floorHour);
+    const ingameMinute = /Math.floor((0 % 1) * 60);//Math.floor((inGameTimeDecimal % 1) * 60);
     const hours = floorHour % 24;
     const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
