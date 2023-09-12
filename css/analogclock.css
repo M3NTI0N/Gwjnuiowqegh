@@ -1,25 +1,42 @@
-.clock {
-    width: 200px;
-    height: 200px;
-    border: 5px solid #333;
-    border-radius: 50%;
-    position: relative;
-}
+        /* Style for the clock container */
+        .clock-container {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            position: relative;
+        }
 
-.hour, .minute, .second {
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    background: #333;
-    top: 50%;
-    transform-origin: 100%;
-    transform: translateY(-50%);
-}
+        /* Style for the clock hands */
+        .clock-hand {
+            position: absolute;
+            height: 50%;
+            width: 2px;
+            background: #333;
+            left: 50%;
+            transform-origin: 50% 100%;
+            transform: translateX(-50%);
+        }
 
-.hour {
-    transform: rotate(90deg);
-}
+        /* Style for the hour hand */
+        .hour-hand {
+            background: #333;
+            transform: translateX(-50%) rotate(0deg);
+            z-index: 3;
+        }
 
-.minute {
-    transform: rotate(180deg);
-}
+        /* Style for the minute hand */
+        .minute-hand {
+            background: #666;
+            transform: translateX(-50%) rotate(0deg);
+            z-index: 2;
+        }
+
+        /* Style for the second hand (optional) */
+        .second-hand {
+            background: red;
+            height: 45%;
+            width: 1px;
+            transform: translateX(-50%) rotate(0deg);
+            z-index: 1;
+        }
