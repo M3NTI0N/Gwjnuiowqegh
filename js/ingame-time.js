@@ -24,7 +24,7 @@ export function updateInGameTime(inGameTimeDecimal) {
         document.getElementById('ingame-time-label').innerText = 'Afternoon';
         document.body.style.backgroundImage = prefixedafternoonGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
-    } else if (floorHour >= 18 && floorHour <= 80) {
+    } else if (floorHour >= 18 && floorHour <= 20) {
         document.getElementById('ingame-time-label').innerText = 'Evening';
         document.body.style.backgroundImage = prefixedeveningGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
