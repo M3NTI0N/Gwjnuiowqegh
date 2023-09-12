@@ -3,7 +3,7 @@
 }
 
 body {
-	background-image: '/img/Palia_Key_Art_Wallpaper_4K.png';
+	background-image: './img/Palia_Key_Art_Wallpaper_4K.png';
 	position: absolute;
 	height: 100%;
 	background-repeat: no-repeat;
