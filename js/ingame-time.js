@@ -16,12 +16,9 @@ export function updateInGameTime(inGameTimeDecimal) {
         '-moz-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)',
         '-o-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)'
     ].join(',');
-    const prefixedafternoonGradient = [
-        'linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)',
-        '-webkit-linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)',
-        '-moz-linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)',
-        '-o-linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)'
-    ].join(',');
+
+    const prefixedafternoonGradient = 'linear-gradient(to bottom, #40405c 0%, #6f71aa 80%, #8a76ab 100%)';
+
     const prefixedeveningGradient = [
         'linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
         '-webkit-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
