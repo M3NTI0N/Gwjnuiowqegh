@@ -8,12 +8,7 @@ export function updateInGameTime(inGameTimeDecimal) {
     const hours = floorHour % 24;
     const hourDegrees = (360 / 12) * hours + (360 / 12) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
-	if (floorHour >= '11') {
-		document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
-	} else {
-		document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
-	}
-    
+
 
 	window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
     hourElement.style.transform = `rotate(${hourDegrees}deg)`;
