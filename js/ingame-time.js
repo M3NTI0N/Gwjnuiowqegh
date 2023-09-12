@@ -16,28 +16,28 @@ export function updateInGameTime(inGameTimeDecimal) {
         '-moz-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)',
         '-o-linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)',
         morninggradient
-    ];
+    ].join(',');
     const afternoongradient = 'linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)';
     const prefixedafternoonGradient = [
         '-webkit-linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)',
         '-moz-linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)',
         '-o-linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)',
         afternoongradient
-    ];
+    ].join(',');
     const eveninggradient = 'linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)';
     const prefixedeveningGradient = [
         '-webkit-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
         '-moz-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
         '-o-linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)',
         eveninggradient
-    ];
+    ].join(',');
     const nightgradient = 'linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)';
     const prefixednightGradient = [
         '-webkit-linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)',
         '-moz-linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)',
         '-o-linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)',
         nightgradient
-    ];
+    ].join(',');
     
     // Change Background at times.
     if (floorHour > 5 && floorHour < 12) {
