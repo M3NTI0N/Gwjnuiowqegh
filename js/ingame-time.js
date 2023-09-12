@@ -59,7 +59,7 @@ export function updateInGameTime(inGameTimeDecimal) {
 	} else {
 		document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
 	}
-    document.body.style.background = prefixedmorningGradient;
+    
 
 	window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
     hourElement.style.transform = `rotate(${hourDegrees}deg)`;
