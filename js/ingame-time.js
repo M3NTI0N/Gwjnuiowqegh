@@ -44,14 +44,15 @@ export function updateInGameTime(inGameTimeDecimal) {
     
         // Change Background at times.
         if (floorHour > 5 && floorHour < 10) {
-            document.body.style.background = prefixedmorningGradient;
+            document.body.style.backgroundImage = prefixedmorningGradient;
         } else if (floorHour > 10 && floorHour < 15) {
-            document.body.style.background = prefixedafternoonGradient;
+            document.body.style.backgroundImage = prefixedafternoonGradient;
         } else if (floorHour > 15 && floorHour < 19) {
-            document.body.style.background = prefixedeveningGradient;
+            document.body.style.backgroundImage = prefixedeveningGradient;
         } else {
-            document.body.style.background = prefixednightGradient;
+            document.body.style.backgroundImage = prefixednightGradient;
         }
+
     // Time counters/clock
     if (floorHour > 5 && floorHour < 18) {
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
