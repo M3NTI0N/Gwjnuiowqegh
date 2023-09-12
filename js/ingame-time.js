@@ -43,7 +43,7 @@ export function updateInGameTime(inGameTimeDecimal) {
         nightgradient
     ].join(';');
 
-
+    // Change Background at times.
     if (floorHour > 5 && floorHour < 10) {
         document.body.style.background = prefixedmorningGradient;
     } else if (floorHour > 10 && floorHour < 15) {
@@ -53,6 +53,8 @@ export function updateInGameTime(inGameTimeDecimal) {
     } else {
         document.body.style.background = prefixednightGradient;
     }
+
+    // Time counters/clock
     if (floorHour > 5 && floorHour < 18) {
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
 	} else {
