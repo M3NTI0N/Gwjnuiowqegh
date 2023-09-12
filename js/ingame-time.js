@@ -2,6 +2,7 @@ import * as Util from './util.js';
 import * as TabManager from './tab-manager.js';
 
 export function updateInGameTime(inGameTimeDecimal) {
+    let hourDeg;
 	const floorHour = Math.floor(inGameTimeDecimal);
 	const ingameHour = Util.getTwelveHour(floorHour);
     if (Util.getMeridiemText(floorHour) === 'PM'){
