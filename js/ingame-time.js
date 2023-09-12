@@ -16,28 +16,28 @@ export function updateInGameTime(inGameTimeDecimal) {
         '-moz-' + morninggradient,
         '-o-' + morninggradient,
         morninggradient
-        ].join(';');
+        ];
     const afternoongradient = 'linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%)';
     const prefixedafternoonGradient = [
         '-webkit-' + afternoongradient,
         '-moz-' + afternoongradient,
         '-o-' + afternoongradient,
         afternoongradient
-    ].join(';');
+    ];
     const eveninggradient = 'linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%)';
     const prefixedeveningGradient = [
         '-webkit-' + eveninggradient,
         '-moz-' + eveninggradient,
         '-o-' + eveninggradient,
         eveninggradient
-    ].join(';');
+    ];
     const nightgradient = 'linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%)';
     const prefixednightGradient = [
         '-webkit-' + nightgradient,
         '-moz-' + nightgradient,
         '-o-' + nightgradient,
         nightgradient
-    ].join(';');
+    ];
     
     // Change Background at times.
     if (floorHour > 5 && floorHour < 6) {
