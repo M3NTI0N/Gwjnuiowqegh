@@ -40,7 +40,7 @@ export function updateInGameTime(inGameTimeDecimal) {
     ].join(';');
     
     // Change Background at times.
-    if (floorHour > 6 && floorHour < 12) {
+    if (floorHour > 5 && floorHour < 12) {
         document.getElementById('clock-container').innerText = 'Morning';
         document.body.style.backgroundImage = prefixedmorningGradient;
     } else if (floorHour > 12 && floorHour < 18) {
