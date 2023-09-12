@@ -4,6 +4,8 @@
     /* border: 5px solid #333; */
     border-radius: 50%;
     position: relative;
+    background-image: url('/img/innermoon.png'); /* Set the path to your background image */
+    background-size: cover; /* Adjust the background size as needed */
 }
 
 .clock {
