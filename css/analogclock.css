@@ -1,6 +1,6 @@
         /* Style for the clock container */
         .clock-container {
-            background-image: url('./image/clockwork.png');
+            background-image: url('./img/clockwork.png');
             background-size: cover;
             width: 100px;
             height: 100px;
