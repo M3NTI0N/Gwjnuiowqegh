@@ -15,6 +15,7 @@
 
 <body>
 	<div class="main">
+		<button onclick="toggleHeaderStatus()">Toggle Header</button>
 		<div class="header">
 			<div class="header-status">
 				<div class="clock-container" id="clock-container">
@@ -43,7 +44,12 @@
 	<link href='./css/index.css?v=6903' rel='stylesheet' type='text/css'>
 	<link href='./css/analogclock.css' rel='stylesheet' type='text/css'>
 	<script src="./js/script.js?v=6903" type="module"></script>
-	<script src="./js/analogclock.js" type="js"></script>
+	<script>
+        function toggleHeaderStatus() {
+            var headerStatus = document.querySelector('.header-status');
+            headerStatus.classList.toggle('hidden');
+        }
+    </script>
 </body>
 
 </html>
