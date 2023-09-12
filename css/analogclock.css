@@ -50,5 +50,5 @@
 
 /* Style for the folded content (hidden by default) */
 .header-status {
-    display:inline;
+    display:block;
 }
