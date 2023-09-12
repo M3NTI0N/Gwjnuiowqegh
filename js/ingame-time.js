@@ -43,11 +43,11 @@ export function updateInGameTime(inGameTimeDecimal) {
         ].join(';');
     
         // Change Background at times.
-        if (floorHour > 6 && floorHour < 10) {
+        if (floorHour > 6 && floorHour < 12) {
             document.body.style.backgroundImage = prefixedmorningGradient;
-        } else if (floorHour > 10 && floorHour < 15) {
+        } else if (floorHour > 12 && floorHour < 18) {
             document.body.style.backgroundImage = prefixedafternoonGradient;
-        } else if (floorHour > 15 && floorHour < 20) {
+        } else if (floorHour > 18 && floorHour < 21) {
             document.body.style.backgroundImage = prefixedeveningGradient;
         } else {
             document.body.style.backgroundImage = prefixednightGradient;
