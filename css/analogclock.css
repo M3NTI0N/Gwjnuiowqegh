@@ -49,6 +49,6 @@
 }
 
 /* Style for the folded content (hidden by default) */
-.foldable-content {
+.header-status {
     display:inline;
 }
