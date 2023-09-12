@@ -74,7 +74,7 @@ input[type="text"][id^="text"] {
 	}
 
 	#palia-times-container {
-		height: calc(150vh);
+		height: calc(340vh);
 		grid-auto-flow: row;
 	}
 
