@@ -1,27 +1,23 @@
-import * as Util from './util.js';
-import * as TabManager from './tab-manager.js';
-
-export function updateInGameTime(inGameTimeDecimal) {
-	const floorHour = Math.floor(inGameTimeDecimal);
-	const ingameHour = Util.getTwelveHour(floorHour);
-	const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
-}
-
-
-function updateClock() {
-    const hourElement = document.getElementById('hour');
-    const minuteElement = document.getElementById('minute');
-
+function updateClockHands() {
     const now = new Date();
-    const hours = ingameHour % 12;
-    const minutes = ingameMinute;
+    const hours = now.getHours() % 12; // Convert to 12-hour format
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    
+    // Calculate rotation angles for the clock hands
+    const hourDeg = (360 / 12) * (hours + minutes / 60);
+    const minuteDeg = (360 / 60) * minutes;
+    const secondDeg = (360 / 60) * seconds;
 
-    const hourDegrees = (360 / 12) * hours + (360 / 12) * (minutes / 60);
-    const minuteDegrees = (360 / 60) * minutes + (360 / 60) * (seconds / 60);
-
-    hourElement.style.transform = `rotate(${hourDegrees}deg)`;
-    minuteElement.style.transform = `rotate(${minuteDegrees}deg)`;
+    // Update the CSS transforms for the clock hands
+    document.getElementById('hour-hand').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+    document.getElementById('minute-hand').style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+    // Uncomment the following line if you want to add a second hand
+    // document.getElementById('second-hand').style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
 }
 
-setInterval(updateClock, 1000);
-updateClock(); // Initial call to set the clock to the current time
+// Call the updateClockHands function every second to keep the clock updated
+setInterval(updateClockHands, 1000);
+
+// Initial call to set the clock hands at the current time
+updateClockHands();
