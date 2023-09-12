@@ -24,10 +24,3 @@
         transform: translateX(-50%) rotate(0deg);
         z-index: 3;
     }
-
-    /* Style for the minute hand */
-    .minute-hand {
-        background: #666;
-        transform: translateX(-50%) rotate(0deg);
-        z-index: 2;
-    }
