@@ -28,8 +28,8 @@
     position: absolute;
     width: 100%; /* Set the width of the square image */
     height: 100%; /* Set the height of the square image */
-    top: 10%;
-    left: 10%;
+    top: 0%;
+    left: 0%;
     transform: translate(-50%, -50%);
 }
 
