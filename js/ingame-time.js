@@ -6,7 +6,7 @@ export function updateInGameTime(inGameTimeDecimal) {
 	const ingameHour = Util.getTwelveHour(floorHour);
     const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
     const hours = floorHour % 24;
-    const hourDegrees = (360 / 12) * hours + (360 / 12) * (minutes / 60);
+    const hourDegrees = (360 / 12) * hours + (360 / 12) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
 
     
