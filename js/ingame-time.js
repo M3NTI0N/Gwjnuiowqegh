@@ -6,7 +6,7 @@ export function updateInGameTime(inGameTimeDecimal) {
 	const ingameHour = Util.getTwelveHour(floorHour);
 	const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
     const hourDeg = (360 / 24) * (ingameHour + ingameMinute / 60);
-    const minuteDeg = (360 / 60) * ingameMinute;
+    //const minuteDeg = (360 / 60) * ingameMinute;
 
 
 	window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
