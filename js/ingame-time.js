@@ -6,7 +6,7 @@ export function updateInGameTime(inGameTimeDecimal) {
 	const ingameHour = 0;//Util.getTwelveHour(floorHour);
     const ingameMinute = 0;//Math.floor((inGameTimeDecimal % 1) * 60);
     const hours = floorHour % 24;
-    const hourDegrees = (360 / 12) * hours + (360 / 12) * (ingameMinute / 60);
+    const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
     if (floorHour > 6 && floorHour < 18) {
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
