@@ -10,10 +10,11 @@ export function updateInGameTime(inGameTimeDecimal) {
     const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
     // Gradients
-    const prefixedmorningGradient = 'linear-gradient(to bottom, #fddb92, #d1fdff)';
+    const prefixedmorningGradient = 'linear-gradient(to bottom, #0F97ED 0%, #76CEF4 40%, #F7F175 100%)';
     const prefixedafternoonGradient = 'linear-gradient(to bottom, #44bfc3, #9eb8f0)';
     const prefixedeveningGradient = 'linear-gradient(170deg, #56374B 0%, #875A6F 40%, #AB7682 100%)';
-    const prefixednightGradient = 'linear-gradient(170deg, #1A1840 0%, #3B2146 40%, #56374B 100%)';
+    //const prefixednightGradient = 'linear-gradient(170deg, #1A1840 0%, #3B2146 40%, #56374B 100%)';
+    const prefixednightGradient = 'linear-gradient(to bottom, #0F97ED 0%, #76CEF4 40%, #F7F175 100%)';
     
     // Change Background at times.
     if (floorHour >= 5 && floorHour < 12) {
