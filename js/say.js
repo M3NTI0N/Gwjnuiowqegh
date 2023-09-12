@@ -34,7 +34,8 @@ const _getVoice = (voices) => {
 	}
 
 	foundVoice = voices.find(function (voice) {
-		return voice.name === "Microsoft Linda - English (Canada)";
+		// return voice.name === "Microsoft Linda - English (Canada)";
+		return voice.gender === "female";
 	});
 	
 	if (foundVoice) {
