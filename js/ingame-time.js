@@ -60,10 +60,11 @@ export function updateInGameTime(inGameTimeDecimal) {
     	}
     
 
-    	window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
-        hourElement.style.transform = `rotate(${hourDegrees}deg)`;
-        
-        document.getElementById('ingame-time').innerText = ingameTimeDisplay;
-	    TabManager.updateTitle();
+
 });
+window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
+hourElement.style.transform = `rotate(${hourDegrees}deg)`;
+
+document.getElementById('ingame-time').innerText = ingameTimeDisplay;
+TabManager.updateTitle();
 }
