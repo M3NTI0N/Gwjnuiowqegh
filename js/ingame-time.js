@@ -4,8 +4,13 @@ import * as TabManager from './tab-manager.js';
 export function updateInGameTime(inGameTimeDecimal) {
 	const floorHour = Math.floor(inGameTimeDecimal);
 	const ingameHour = Util.getTwelveHour(floorHour);
+    if (Util.getMeridiemText(floorHour) == 'PM'){
+        const hourDeg = (360 / 24) * (ingameHour + 12 + ingameMinute / 60);    
+    } else {
+        const hourDeg = (360 / 24) * (ingameHour + ingameMinute / 60);
+    }
 	const ingameMinute = Math.floor((inGameTimeDecimal % 1) * 60);
-    const hourDeg = (360 / 24) * (ingameHour + ingameMinute / 60);
+    
 
 	window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
     document.getElementById('hour-hand').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
