@@ -30,8 +30,11 @@ body {
 	flex-direction: column;
 	text-align: center;
 }
-
-.chapa-div, .ingame-time-div {
+.chapa-div { 
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.ingame-time-div {
 	margin-left: 40px;
 	margin-top: 40px;
 	margin-bottom: 40px;
