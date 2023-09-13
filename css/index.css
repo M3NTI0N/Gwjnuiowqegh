@@ -136,7 +136,7 @@ input[type="text"][id^="text"] {
 	}
 
 	#palia-times-container {
-		height: calc(450px);
+		height: calc(400px);
 		/*grid-auto-flow: row;*/
 	}
 
