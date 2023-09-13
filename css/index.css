@@ -86,7 +86,7 @@ input[type="text"][id^="text"] {
 }
 @media (max-width: 820px) {
 	:root {
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 	#palia-times-container {
