@@ -90,8 +90,8 @@ input[type="text"][id^="text"] {
 	}
 
 	#palia-times-container {
-		height: calc(300px);
-		grid-auto-flow: row;
+		height: calc(350px);
+		/*grid-auto-flow: row;*/
 	}
 
 	#ingame-time, #chase-time {
