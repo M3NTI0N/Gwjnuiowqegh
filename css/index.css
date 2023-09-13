@@ -32,7 +32,7 @@ body {
 }
 
 .chapa-div, .ingame-time-div {
-	margin:auto;
+	margin: 10px 10px 10px 10px;
 }
 
 #ingame-time, #chase-time {
