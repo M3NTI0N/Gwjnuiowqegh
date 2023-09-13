@@ -90,7 +90,7 @@ input[type="text"][id^="text"] {
 	}
 
 	#palia-times-container {
-		height: 1024px;
+		height: calc(400px);
 		grid-auto-flow: row;
 	}
 
