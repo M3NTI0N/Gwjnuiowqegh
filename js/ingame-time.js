@@ -9,8 +9,8 @@ export function updateInGameTime(inGameTimeDecimal) {
     const hours = floorHour % 24;
     const hourDegrees = (360 / 24) * hours + (360 / 24) * (ingameMinute / 60);
     const hourElement = document.getElementById('hour');
-    const chasehours = 24 - floorHour;
-    const chasemins = 60 - ingameMinute;
+    const chasehours = String(24 - floorHour).padStart(2, '0');
+    const chasemins = String(60 - ingameMinute).padStart(2, '0');
     const timeuntilchase = `⭐️ ${chasehours}:${chasemins}`;
 
     // Gradients
