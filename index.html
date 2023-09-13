@@ -32,14 +32,15 @@
 				<div>
 					<h2 id="ingame-time">00:00</h2><span class="ingame-time-label" id="ingame-time-label">In-Game Time</span>
 				</div>
+				<div>
+					<label><input type="checkbox" id="checkbox-show-all" onchange="toggleShowAll()" checked/>&nbsp;Show All Options</label>
+				</div>
+				<div>
+					<label><input type="checkbox" id="enable-notifications" onchange="toggleEnableNotifications()" />&nbsp;App Notifications</label>
+				</div>
 			</div>
 		</div>
-		<div>
-			<label><input type="checkbox" id="checkbox-show-all" onchange="toggleShowAll()" checked/>&nbsp;Show All Options</label>
-		</div>
-		<div>
-			<label><input type="checkbox" id="enable-notifications" onchange="toggleEnableNotifications()" />&nbsp;App Notifications</label>
-		</div>
+
 		<div id="palia-times-container" data-show-all="true">
 		</div>
 	</div>
