@@ -80,6 +80,10 @@ input[type="text"][id^="text"] {
 	font-size: 80%;
 }
 
+.options {
+  position: relative; /* Ensure the element can have a z-index */
+  z-index: 2;
+}
 @media (max-width: 820px) {
 	:root {
 		font-size: 16px;
