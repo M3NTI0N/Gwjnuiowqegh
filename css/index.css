@@ -31,8 +31,9 @@ body {
 	text-align: center;
 }
 
-.chapa-div {
+.chapa-div, .ingame-time-div {
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 #ingame-time, #chase-time {
