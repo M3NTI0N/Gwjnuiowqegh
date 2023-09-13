@@ -12,7 +12,7 @@ export function updateInGameTime(inGameTimeDecimal) {
     const chasehours = 24 - floorHour;
     const chasemins = 60 - ingameMinute;
     const timeuntilchase = '${chasehours}:${chasemins}';
-    
+
     // Gradients
     const prefixedmorningGradient = 'linear-gradient(170deg, #82addb 0%,#ebb2b1 100%)';
     const prefixedafternoonGradient = 'linear-gradient(170deg, #90dffe 0%,#38a3d1 100%)';
@@ -22,19 +22,15 @@ export function updateInGameTime(inGameTimeDecimal) {
 
     // Change Background at times.
     if (floorHour >= 5 && floorHour < 12) {
-        document.getElementById('ingame-time-label').innerText = 'Morning';
         document.body.style.backgroundImage = prefixedmorningGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
     } else if (floorHour >= 12 && floorHour < 18) {
-        document.getElementById('ingame-time-label').innerText = 'Afternoon';
         document.body.style.backgroundImage = prefixedafternoonGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innersun.png')";
     } else if (floorHour >= 18 && floorHour <= 20) {
-        document.getElementById('ingame-time-label').innerText = 'Evening';
         document.body.style.backgroundImage = prefixedeveningGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
     } else {
-        document.getElementById('ingame-time-label').innerText = 'Night';
         document.body.style.backgroundImage = prefixednightGradient;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
     }
@@ -43,5 +39,6 @@ export function updateInGameTime(inGameTimeDecimal) {
     hourElement.style.transform = `rotate(${hourDegrees}deg)`;
 
     document.getElementById('ingame-time').innerText = ingameTimeDisplay;
+    document.getElementById('chase-time').innerText = timeuntilchase;
     TabManager.updateTitle();
 }
