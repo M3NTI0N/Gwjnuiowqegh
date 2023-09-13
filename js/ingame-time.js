@@ -11,8 +11,7 @@ export function updateInGameTime(inGameTimeDecimal) {
     const hourElement = document.getElementById('hour');
     const chasehours = String(24 - floorHour).padStart(2, '0');
     const chasemins = String(60 - ingameMinute).padStart(2, '0');
-    const timeuntilchase = `⭐️ ${chasehours}:${chasemins}
-Until Chapaa Chase`;
+    const timeuntilchase = `⭐️ ${chasehours}:${chasemins}`;
 
     // Gradients
     const prefixedmorningGradient = 'linear-gradient(170deg, #82addb 0%,#ebb2b1 100%)';
@@ -36,8 +35,7 @@ Until Chapaa Chase`;
         document.getElementById('clock-container').style.backgroundImage = "url('/img/innermoon.png')";
     }
     
-    window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}
-    In-Game Time`;
+    window.ingameTimeDisplay = `${ingameHour}:${ingameMinute.toString().padStart(2, '0')} ${Util.getMeridiemText(floorHour)}`;
     hourElement.style.transform = `rotate(${hourDegrees}deg)`;
 
     document.getElementById('ingame-time').innerText = ingameTimeDisplay;
